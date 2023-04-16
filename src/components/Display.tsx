@@ -27,7 +27,7 @@ export default props => {
 				style={style.displayValue}
 				numberOfLines={1}
 			>
-
+				{props.value}
 			</Text>
 		</View>
 	)
