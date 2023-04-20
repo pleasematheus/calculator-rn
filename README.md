@@ -55,5 +55,5 @@ O componente `App` define três métodos:
 - clearMemory(): Limpa a memória da calculadora, restaurando o estado inicial.
 - setOperation(operation): Define a operação a ser executada e atualiza o estado da calculadora de acordo com a operação selecionada.
 
-# #Renderização
+# Renderização
 O componente `App` renderiza os componentes `Display` e `Botão` de acordo com o estado atual da calculadora. Os botões são organizados em uma grade com 4 colunas e várias linhas, usando o estilo definido no objeto `style`.
