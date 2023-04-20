@@ -5,12 +5,16 @@ Este é um projeto simples de uma calculadora feita em React Native.
 Para executar este projeto, basta clonar este repositório e executar os seguintes comandos:
 
 ## Instalar as dependências
-Com o terminal aberto e no diretório da aplicação digite:
 ```
 npx install react-native
 ```
+ou
+```
+npm install -g expo-cli
+```
 
 ## Executar a aplicação
+Com o terminal aberto e no diretório da aplicação digite:
 ```
 npx react-native run-android
 ```
