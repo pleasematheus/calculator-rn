@@ -1,47 +1,47 @@
-# Calculadora React Native
-Este é um projeto simples de uma calculadora feita em React Native.
+# React Native Calculator
+This is a simple calculator project built using React Native.
 
-## Como executar
-Para executar este projeto, basta clonar este repositório e executar os seguintes comandos:
+## How to run
+To run this project, simply clone this repository and execute the following commands:
 
-## Instalar as dependências
+## Install dependencies
 ```
 npx install react-native
 ```
-ou
+or
 ```
 npm install -g expo-cli
 ```
 
-## Executar a aplicação
-Com o terminal aberto e no diretório da aplicação digite:
+# Run the application
+With the terminal open and in the application directory, type:
+
 ```
 npx react-native run-android
 ```
-ou
+or
 ```
 npx react-native run-ios
 ```
 
-# Componentes
-## Botão
-O componente `Botão` é responsável por renderizar um botão na tela da calculadora. Ele recebe os seguintes parâmetros:
+# Components
+## Button
+The `Button` component is responsible for rendering a button on the calculator screen. It receives the following parameters:
 
-- label: O texto que será exibido no botão;
-- double (opcional): Um valor booleano que indica se o botão deve ter o dobro do tamanho padrão;
-- triple (opcional): Um valor booleano que indica se o botão deve ter o triplo do tamanho padrão;
-- operation (opcional): Um valor booleano que indica se o botão é uma operação (como +, -, * e /).
+- label: The text that will be displayed on the button;
+- double (optional): A boolean value that indicates whether the button should be twice the standard size;
+- triple (optional): A boolean value that indicates whether the button should be three times the standard size;
+- operation (optional): A boolean value that indicates whether the button is an operation (such as +, -, *, and /).
 
-# Display
-O componente `Display` é responsável por renderizar o visor da calculadora. Ele recebe um único parâmetro:
+## Display
+The `Display` component is responsible for rendering the calculator display. It receives a single parameter:
+- value: The value that will be displayed on the display.
 
-value: O valor que será exibido no visor.
+## App
+The `App` component is the main component of the application. It renders the Display and Button components, and implements the calculator logic.
 
-# App
-O componente `App` é o componente principal da aplicação. Ele renderiza os componentes Display e Botão, e implementa a lógica da calculadora.
-
-## Estado inicial
-O estado inicial da calculadora é definido pela constante `initialState` e tem a seguinte estrutura:
+# Initial state
+The initial state of the calculator is defined by the `initialState` constant and has the following structure:
 
 ```
 const initialState = {
@@ -52,12 +52,12 @@ const initialState = {
   current: 0
 }
 ```
-# Métodos
-O componente `App` define três métodos:
 
-- addDigit(n): Adiciona um dígito ao valor exibido no visor. Se o dígito for um ponto e já houver um ponto no valor, nada é feito. Se o valor atual for 0, o visor é limpo antes de adicionar o dígito.
-- clearMemory(): Limpa a memória da calculadora, restaurando o estado inicial.
-- setOperation(operation): Define a operação a ser executada e atualiza o estado da calculadora de acordo com a operação selecionada.
+# Methods
+The `App` component defines three methods:
+- addDigit(n): Adds a digit to the value displayed on the display. If the digit is a dot and there is already a dot in the value, nothing is done. If the current value is 0, the display is cleared before adding the digit.
+- clearMemory(): Clears the calculator memory, restoring the initial state.
+- setOperation(operation): Defines the operation to be executed and updates the calculator state according to the selected operation.
 
-# Renderização
-O componente `App` renderiza os componentes `Display` e `Botão` de acordo com o estado atual da calculadora. Os botões são organizados em uma grade com 4 colunas e várias linhas, usando o estilo definido no objeto `style`.
+# Rendering
+The `App` component renders the `Display` and `Button` components according to the current state of the calculator. The buttons are organized in a grid with 4 columns and several rows, using the style defined in the `style` object.
